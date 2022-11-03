@@ -9,12 +9,7 @@
       "number",
       "balance",
       "currency"
-    ],
-    "currency": {
-      "enum": [
-        "RUB",
-        "USD"
-      ]
+    ]
     },
     "additionalProperties": false,
     "properties": {
@@ -33,7 +28,12 @@
         "type": "integer"
       },
       "currency": {
-        "type": "string"
+        "type": "string",
+        "currency_type": {
+          "enum": [
+            "RUB",
+            "USD"
+          ]
       }
     }
   }
